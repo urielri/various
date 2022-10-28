@@ -1,0 +1,120 @@
+.customize {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  .main {
+    display: flex;
+    column-gap: 124px;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    max-width: 1440px;
+    .content {
+      display: flex;
+      flex-direction: column;
+      row-gap: 24px;
+      h1 {
+        font-weight: 500;
+        color: var(--black);
+        strong {
+          color: var(--violet);
+        }
+      }
+      .check {
+        display: flex;
+        flex-direction: column;
+        row-gap: 24px;
+      }
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+      }
+      .column {
+        display: flex;
+        column-gap: 24px;
+        align-items: center;
+      }
+      label {
+        all: unset;
+        display: flex;
+        flex-direction: column;
+        row-gap: 12px;
+        .name {
+          font-size: 16px;
+          width: fit-content;
+          cursor: pointer;
+          color: var(--black);
+          font-weight: 600;
+        }
+        .value {
+          color: var(--violet);
+          font-size: 16px;
+          font-style: italic;
+          font-weight: 600;
+        }
+        .text {
+          color: var(--black);
+        }
+        .color {
+          display: flex;
+          column-gap: 6px;
+          color: var(--black);
+          .circle {
+            width: 16px;
+            height: 16px;
+            background: grey;
+            border-radius: 100%;
+          }
+        }
+        .info {
+          font-size: 12px;
+          color: #909090;
+        }
+      }
+    }
+  }
+}
+.redirect {
+  display: grid;
+  row-gap: 24px;
+  place-items: center;
+  width: 400px;
+  h1 {
+    font-weight: 500;
+  }
+  span {
+    color: var(--violet);
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+.lego {
+  position: relative;
+  width: fit-content;
+  height: auto;
+  .text {
+    position: absolute;
+    max-width: 160px;
+    width: 100%;
+    overflow: hidden;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 272px);
+    span {
+      width: 100%;
+      color: var(--violet);
+      text-align: left;
+      font-weight: 700;
+    }
+  }
+}
+.form {
+  form {
+    display: flex;
+    row-gap: 24px;
+    flex-direction: column;
+  }
+}
